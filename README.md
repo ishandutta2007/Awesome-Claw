@@ -92,6 +92,13 @@ OpenClaw is the viral original (200k+ stars): a full-featured TypeScript gateway
 
 ---
 
+## ✨ Star History
+
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/Awesome-Claw&type=date&legend=bottom-right)](https://www.star-history.com/#ishandutta2007/Awesome-Claw&type=date&legend=bottom-right)
+
+---
+
 <div align="center">
 
 **Made with ❤️ for the Claw community**  
