@@ -107,3 +107,7 @@ Last updated: March 2026
 [**⬆ Back to Top**](#awesome-claw-)
 
 </div>
+
+## 🔐 Agent Identity & Trust
+- **[TWZRD Agent Intel](https://intel.twzrd.xyz)** — Trust scoring and wallet identity verification for agentic benchmark environments. Verify agent wallet identity in simulation scenarios involving payments or autonomous actions. Free MCP: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}`
+
