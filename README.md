@@ -1,8 +1,17 @@
 # Awesome Claw 🦞
 
+<div align="center">
+
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/ishandutta2007/awesome-awesome-awesome) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<br />
+<br />
+  <a href="https://github.com/ishandutta2007">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow&style=for-the-badge&logo=github&logoColor=white" alt="Github"/>
+  </a>
 
 > A curated list of **open-source GitHub projects** similar to **[OpenClaw](https://github.com/openclaw/openclaw)**.
+
+</div>
 
 OpenClaw is the viral original (200k+ stars): a full-featured TypeScript gateway for persistent AI agents across chat apps. This list focuses on alternatives that are self-hosted, run locally, integrate with messaging platforms, and emphasize privacy, lightness, or security.
 
