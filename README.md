@@ -78,6 +78,9 @@ Whether you need a lightweight Python CLI, a micro-binary written in Rust or Zig
 *   **[ZeroClaw](https://github.com/zeroclaw-labs/zeroclaw)** [![Stars](https://img.shields.io/github/stars/zeroclaw-labs/zeroclaw?style=social&color=white)](https://github.com/zeroclaw-labs/zeroclaw/stargazers)  
     *Fast, tiny Rust framework.* <5 MB RAM. Autonomous runtime with model/tool/memory swapping. Excellent for production/low-power.
 
+*   **[FasterClaw](https://github.com/ishandutta2007/FasterClaw)** [![Stars](https://img.shields.io/github/stars/ishandutta2007/FasterClaw?style=social&color=white)](https://github.com/ishandutta2007/FasterClaw/stargazers)  
+    *High-performance Go rewrite.* Ground-up reimplementation of OpenClaw. Ultra-lightweight, <10 MB RAM, and 400x faster startup.
+
 *   **[NanoClaw](https://github.com/qwibitai/nanoclaw)** [![Stars](https://img.shields.io/github/stars/qwibitai/nanoclaw?style=social&color=white)](https://github.com/qwibitai/nanoclaw/stargazers)  
     *Container-isolated agents.* For true OS-level security. ~500 lines core, WhatsApp + scheduled jobs + memory.
 
@@ -103,6 +106,7 @@ Whether you need a lightweight Python CLI, a micro-binary written in Rust or Zig
 | **PicoClaw** | Go | `<10MB` | Medium | Edge / Raspberry Pi |
 | **NullClaw** | Zig | `~1MB` | High (static bin) | Ultra-low-power hardware |
 | **ZeroClaw** | Rust | `<5MB` | High (WASM) | Production / low-power |
+| **FasterClaw** | Go | `<10MB` | Medium | High-performance Go rewrite |
 | **IronClaw** | Rust | `~500MB` | Very High | Privacy-first |
 | **NanoClaw** | TS | `~200MB` | Very High (containers) | Security paranoid users |
 | **SafeClaw** | Python | `Minimal` | Extreme (no LLM) | Zero-risk / offline |
