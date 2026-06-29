@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Accent Gradient for Lobster/Claw theme -->
+    <linearGradient id="claw-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff4530" />
+      <stop offset="50%" stop-color="#ff6b4a" />
+      <stop offset="100%" stop-color="#ff8e53" />
+    </linearGradient>
+
+    <!-- Text Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg-grad)" rx="16" />
+
+  <!-- Decorative Background Grid Pattern -->
+  <g opacity="0.05">
+    <path d="M 0,50 L 1200,50 M 0,100 L 1200,100 M 0,150 L 1200,150 M 0,200 L 1200,200 M 0,250 L 1200,250 M 0,300 L 1200,300 M 0,350 L 1200,350" stroke="#ffffff" stroke-width="1" />
+    <path d="M 100,0 L 100,400 M 200,0 L 200,400 M 300,0 L 300,400 M 400,0 L 400,400 M 500,0 L 500,400 M 600,0 L 600,400 M 700,0 L 700,400 M 800,0 L 800,400 M 900,0 L 900,400 M 1000,0 L 1000,400 M 1100,0 L 1100,400" stroke="#ffffff" stroke-width="1" />
+  </g>
+
+  <!-- Abstract Claw Graphic (Left) -->
+  <g transform="translate(150, 200)" stroke="url(#claw-grad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Outer pincers -->
+    <path d="M -80,-40 C -40,-90 40,-90 80,-40 C 90,-20 90,20 80,40 C 40,90 -40,90 -80,40" />
+    <!-- Inner pincers / cutting edges -->
+    <path d="M -50,-20 C -20,-50 20,-50 50,-20" />
+    <path d="M -50,20 C -20,50 20,50 50,20" />
+    <!-- Joint/base -->
+    <path d="M 0,70 L 0,120" stroke-width="16" />
+    <circle cx="0" cy="70" r="14" fill="#ff4530" stroke="none" />
+  </g>
+
+  <!-- Title & Subtitle (Right / Center) -->
+  <g transform="translate(420, 0)">
+    <!-- Main Title -->
+    <text x="0" y="180" font-family="system-ui, -apple-system, sans-serif" font-size="76" font-weight="900" fill="#ffffff" letter-spacing="2">
+      AWESOME <tspan fill="url(#claw-grad)">CLAW</tspan> 🦞
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="500" fill="#94a3b8" letter-spacing="0.5">
+      A Curated Directory of OpenClaw Alternatives &amp; Ecosystems
+    </text>
+
+    <!-- Badges / Tags -->
+    <g transform="translate(0, 280)">
+      <!-- Badge 1: Local-First -->
+      <rect x="0" y="0" width="130" height="34" rx="17" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+      <text x="65" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#38bdf8" text-anchor="middle">Local-First</text>
+
+      <!-- Badge 2: Open Source -->
+      <rect x="145" y="0" width="140" height="34" rx="17" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+      <text x="215" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#34d399" text-anchor="middle">Open Source</text>
+
+      <!-- Badge 3: Privacy-Focused -->
+      <rect x="295" y="0" width="150" height="34" rx="17" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+      <text x="370" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#a78bfa" text-anchor="middle">Privacy-Focused</text>
+    </g>
+  </g>
+</svg>

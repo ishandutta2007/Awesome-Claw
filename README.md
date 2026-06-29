@@ -1,5 +1,9 @@
 # Awesome Claw 🦞
 
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Claw - Curated OpenClaw Alternatives &amp; AI Agents" width="100%">
+</p>
+
 <div align="center">
 
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/ishandutta2007/awesome-awesome-awesome) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -9,11 +13,17 @@
   <img alt="followers" title="Follow me on Github" src="https://custom-icon-badges.herokuapp.com/github/followers/ishandutta2007?color=236ad3&labelColor=1155ba&style=for-the-badge&logo=person-add&label=Follow&logoColor=white"/>
 </a>
 
-> A curated list of **open-source GitHub projects** similar to **[OpenClaw](https://github.com/openclaw/openclaw)**.
+<h1>Curated OpenClaw Alternatives &amp; Local AI Gateways</h1>
+
+> A curated directory of **open-source GitHub projects**, local AI agents, and lightweight gateway alternatives to **[OpenClaw](https://github.com/openclaw/openclaw)**.
 
 </div>
 
-OpenClaw is the viral original (200k+ stars): a full-featured TypeScript gateway for persistent AI agents across chat apps. This list focuses on alternatives that are self-hosted, run locally, integrate with messaging platforms, and emphasize privacy, lightness, or security.
+## 🔍 Overview
+
+**OpenClaw** is a popular TypeScript gateway for persistent AI agents across messaging applications. This curated repository highlights the best **OpenClaw alternatives** and **ecosystem resources** that support self-hosting, local execution, messaging integrations (like Telegram, WhatsApp, and Discord), with a strong emphasis on privacy, minimal resource footprint, and security.
+
+Whether you need a lightweight Python CLI, a micro-binary written in Rust or Zig, or a container-isolated assistant, this list helps you choose the perfect local AI gateway for your infrastructure.
 
 ---
 
