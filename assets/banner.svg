@@ -18,6 +18,61 @@
       <feGaussianBlur stdDeviation="8" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
+
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translate(150px, 200px) translateY(0px); }
+        50% { transform: translate(150px, 200px) translateY(-8px); }
+      }
+      @keyframes pinch-top {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(5px) rotate(3deg); }
+      }
+      @keyframes pinch-bottom {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-5px) rotate(-3deg); }
+      }
+      @keyframes particle-flow-1 {
+        0% { transform: translate(350px, 100px) translateX(0); opacity: 0; }
+        10% { opacity: 0.6; }
+        90% { opacity: 0.6; }
+        100% { transform: translate(350px, 100px) translateX(500px); opacity: 0; }
+      }
+      @keyframes particle-flow-2 {
+        0% { transform: translate(350px, 200px) translateX(0); opacity: 0; }
+        10% { opacity: 0.8; }
+        90% { opacity: 0.8; }
+        100% { transform: translate(350px, 200px) translateX(550px); opacity: 0; }
+      }
+      @keyframes particle-flow-3 {
+        0% { transform: translate(350px, 300px) translateX(0); opacity: 0; }
+        10% { opacity: 0.5; }
+        90% { opacity: 0.5; }
+        100% { transform: translate(350px, 300px) translateX(480px); opacity: 0; }
+      }
+      @keyframes pulse-glow {
+        0%, 100% { filter: drop-shadow(0 0 2px rgba(255, 69, 48, 0.2)); }
+        50% { filter: drop-shadow(0 0 12px rgba(255, 69, 48, 0.6)); }
+      }
+      .animated-claw {
+        animation: float 5s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .claw-outer {
+        animation: pulse-glow 3s ease-in-out infinite;
+      }
+      .claw-inner-top {
+        animation: pinch-top 2.5s ease-in-out infinite;
+        transform-origin: -50px -20px;
+      }
+      .claw-inner-bottom {
+        animation: pinch-bottom 2.5s ease-in-out infinite;
+        transform-origin: -50px 20px;
+      }
+      .particle-1 { animation: particle-flow-1 5s linear infinite; }
+      .particle-2 { animation: particle-flow-2 7s linear infinite 2s; }
+      .particle-3 { animation: particle-flow-3 6s linear infinite 1s; }
+    </style>
   </defs>
 
   <!-- Background -->
@@ -29,13 +84,18 @@
     <path d="M 100,0 L 100,400 M 200,0 L 200,400 M 300,0 L 300,400 M 400,0 L 400,400 M 500,0 L 500,400 M 600,0 L 600,400 M 700,0 L 700,400 M 800,0 L 800,400 M 900,0 L 900,400 M 1000,0 L 1000,400 M 1100,0 L 1100,400" stroke="#ffffff" stroke-width="1" />
   </g>
 
+  <!-- Data Flow Particles -->
+  <circle cx="0" cy="0" r="4" fill="#38bdf8" class="particle-1" />
+  <circle cx="0" cy="0" r="5" fill="#ff6b4a" class="particle-2" />
+  <circle cx="0" cy="0" r="3.5" fill="#34d399" class="particle-3" />
+
   <!-- Abstract Claw Graphic (Left) -->
-  <g transform="translate(150, 200)" stroke="url(#claw-grad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none">
+  <g class="animated-claw" stroke="url(#claw-grad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none">
     <!-- Outer pincers -->
-    <path d="M -80,-40 C -40,-90 40,-90 80,-40 C 90,-20 90,20 80,40 C 40,90 -40,90 -80,40" />
+    <path class="claw-outer" d="M -80,-40 C -40,-90 40,-90 80,-40 C 90,-20 90,20 80,40 C 40,90 -40,90 -80,40" />
     <!-- Inner pincers / cutting edges -->
-    <path d="M -50,-20 C -20,-50 20,-50 50,-20" />
-    <path d="M -50,20 C -20,50 20,50 50,20" />
+    <path class="claw-inner-top" d="M -50,-20 C -20,-50 20,-50 50,-20" />
+    <path class="claw-inner-bottom" d="M -50,20 C -20,50 20,50 50,20" />
     <!-- Joint/base -->
     <path d="M 0,70 L 0,120" stroke-width="16" />
     <circle cx="0" cy="70" r="14" fill="#ff4530" stroke="none" />
